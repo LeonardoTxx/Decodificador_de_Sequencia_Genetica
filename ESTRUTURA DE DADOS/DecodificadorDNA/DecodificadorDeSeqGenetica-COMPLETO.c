@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-//Sequência para validação das sequemcias = (seq para teste = ATTTACCGTAACTGCGA || TTTATGTGTACGTGTGTGCTTATGCTAACGTGTGTGTGCTTACGTACGT)
+//Sequência para validação = (seq para teste = ATTTACCGTAACTGCGA || TTTATGTGTACGTGTGTGCTTATGCTAACGTGTGTGTGCTTACGTACGT)
 
 //-----------------------------------------------Estrutura da Pilha
 typedef struct Pilha{
@@ -105,7 +105,7 @@ int ehMotivoGenetico(char *subseq, int tamanhoMinimo, char **doenca, int *posica
 }
 //-----------------------------------------------Main
 int main(){
-    char dna[100]; //Sequência de DNA (seq para teste = ATTTACCGTAACTGCGA || TTTATGTGTACGTGTGTGCTTATGCTAACGTGTGTGTGCTTACGTACGT)
+    char dna[100]; //Sequência de DNA
     printf("Digite a sequencia de DNA: ");
     scanf("%s", &dna);
 
