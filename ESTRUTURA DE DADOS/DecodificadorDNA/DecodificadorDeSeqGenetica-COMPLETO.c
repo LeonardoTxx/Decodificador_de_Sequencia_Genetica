@@ -18,7 +18,7 @@ Pilha *criarPilha(int capacidade){
     pilha->topo = -1;
     pilha->itens = malloc(capacidade * sizeof(char));
     return pilha;
-}
+} 
 
 void push(Pilha *pilha, char item){
     pilha->itens[++(pilha->topo)] = item;
@@ -43,13 +43,6 @@ Fila *criarFila(int capacidade){
     return fila;
 }
 
-void enfileirar(Fila *fila, int item){
-    fila->itens[++(fila->tras)] = item;
-}
-
-int desenfileirar(Fila *fila){
-    return fila->itens[(fila->frente)++];
-}
 
 //-----------------------------------------------Estrutura da Lista
 typedef struct No{
